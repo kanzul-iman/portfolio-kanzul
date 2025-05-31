@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanzul Portfolio</title>
+</head>
+<body>
+
+ <header class="header">
+  <div class="container">
+    <div class="logo">kanzul iman</div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <a href="kanzul-iman-cv.pdf" download class="resume-footer-btn" target="_blank">📄 Download Resume</a>
+      </ul>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- home section -->
+
+<section id="home" class="home-section">
+  <div class="overlay"></div>
+  <div class="home-content">
+    <h1>Hi, I’m Kanzul Iman</h1>
+    <p>Future Software Engineer | Problem Solver<br>Code. Create. Solve.</p>
+    <div class="buttons">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn btn-contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- about me -->
+
+<section id="about" class="about-section py-5">
+    
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row align-items-center">
+      
+      <!-- Image -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="images/abou-us.jpeg" alt="Kanzul Iman" class="img-fluid rounded-circle shadow about-img">
+      </div>
+
+      <!-- Text & Accordion -->
+      <div class="col-md-8">
+       <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       My Tech Journey
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse show collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>I started with Java solving problems and writing my first programs.</strong> But soon, web development caught my eye. I loved how simple code could create beautiful, interactive experiences on screen.
+        Every project teaches me something new, and every line of code feels like a step closer to turning ideas into reality.
+        Programming isn’t just a skill for me it’s my passion and playground.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Skills & Tools I Love
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        I craft websites using <strong>HTML, CSS, and JavaScript </strong>making every click smooth and every page responsive.
+        I’m comfortable with backend basics and use <strong>Git & GitHub </strong>to keep my code organized and collaborate like a pro.
+        Each tool I master takes me one step closer to building awesome digital experiences.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       Things That Drive Me
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Curiosity </strong>pushes me to explore new ideas every day.
+        <strong>Passion </strong>fuels my dedication to keep learning and improving.
+        I believe <strong>teamwork </strong>out the best solutions, and I thrive when collaborating with others.
+        For me, growth isn’t just a goal — it’s a journey I’m excited to be on.
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills mt-4">
+          <span class="skill-chip">HTML</span>
+          <span class="skill-chip">CSS</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">Bootstrap</span>
+          <span class="skill-chip">GitHub</span>
+          <span class="skill-chip">Java</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project section -->
+<section id="projects" class="projects-section py-5">
+  <div class="container d-block text-center">
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="mb-0">Highlights My Projects</h2>         
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <!-- Project Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100" onclick="openProject('https://kanzul-iman.github.io/kanzul-project-web/')" role="button" tabindex="0">
+          <img src="images/dashboard-img.png" class="card-img-top" alt="Project 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">A web based student dashboard system with basic js logics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100" onclick="openProject('https://kanzul-iman.github.io/trial-clone/')" role="button" tabindex="0">
+          <img src="images/task1-desktop-view.png" class="card-img-top" alt="Project 2 Image">
+          <div class="card-body">
+            <h5 class="card-title">Project Two</h5>
+            <p class="card-text">An Email Template build with html and css.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100" onclick="openProject('https://kanzul-iman.github.io/task2/')" role="button" tabindex="0">
+          <img src="images/desktop-view.png" class="card-img-top" alt="Project 3 Image">
+          <div class="card-body">
+            <h5 class="card-title">Project Three</h5>
+            <p class="card-text">Portfolio website built using Bootstrap 5 with smooth animations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row g-4">
+      <!-- Project Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100" onclick="openProject('https://kanzul-iman.github.io/photographic-website/')" role="button" tabindex="0">
+          <img src="images/task-3-snapshot.png" class="card-img-top" alt="Project 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Project Four</h5>
+            <p class="card-text">A web based student dashboard system with basic js logics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100" onclick="openProject('https://kanzul-iman.github.io/trial/')" role="button" tabindex="0">
+          <img src="images/project-5-img.png" class="card-img-top" alt="Project 2 Image">
+          <div class="card-body">
+            <h5 class="card-title">Project Five</h5>
+            <p class="card-text">An e-commerce site built with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- contact us -->
+<section id="contact" class="contact-section">
+
+    <div class="circular-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.1548054321165!2d68.3644315736046!3d25.399628223475112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70c2f9dc4d03%3A0xbd9d1713c3e2b557!2sLiberty%20Market%20Roundabout%2C%20Hyderabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1748634664300!5m2!1sen!2s"  height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  <div class="overlay">
+
+    <div class="contact-container">
+      <h2 style="padding: 5px;">Get in Touch</h2>
+      
+      <form>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary mt-4">Submit</button>
+
+</form>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>Email</h4>
+          <a href="mailto:yourname@example.com">kanzuliman2k21@gmail.com</a>
+
+        </div>
+        <div class="info-item">
+          <h4>Phone</h4>
+          <a href="tel:+92 3143584730">+92 3143584730</a>
+          
+        </div>
+        <div class="info-item">
+          <h4>Location</h4>
+          <p>Hyderabad, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- footer -->
+<footer class="enhanced-footer">
+  <div class="footer-container">
+
+    <!-- About Section -->
+    <div class="footer-about animate-slideup">
+      <h3>Kanzul Iman</h3>
+      <p>Passionate web developer blending creativity <br>and logic to craft elegant digital experiences.</p>
+      
+    </div>
+
+
+    <!-- Contact Information -->
+    <div class="footer-contact animate-slideup">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:kanzuliman2k21@gmail.com">kanzuliman2k21@gmail.com</a></p>
+      <p>Phone: +92 3143584730</p>
+      <p>Location: Hyderabad, Pakistan</p>
+    </div>
+
+      <!-- Social Media Links -->
+    <div class="footer-social animate-slideup">
+      <h4>Follow Me</h4>
+      <div class="social-icons-footer">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:natum@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Kanzul Iman. Made with ❤️ and HTML/CSS. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+</script>
+
+<script>
+  function openProject(url) {
+    window.open(url, '_blank');
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
